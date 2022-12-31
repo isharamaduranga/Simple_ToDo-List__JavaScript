@@ -93,5 +93,16 @@ function DisplayTodos() {
             }
             DisplayTodos();
         });
+
+        edit.addEventListener('click',ev => {
+           const input = content.querySelector('input');
+           input.removeAttribute('readonly');
+           input.focus();
+           input.addEventListener('blur',ev1 => {
+               input.setAttribute('readonly',true);
+               todo.content=ev1.target.value;
+               DisplayTodos();
+           })
+        })
     });
 }
