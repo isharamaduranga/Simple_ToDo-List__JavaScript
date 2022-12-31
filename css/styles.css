@@ -167,3 +167,35 @@ input:checked ~ .bubble::after{
     margin-bottom: 1rem;
 }
 
+.todo-item label{
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.todo-item .todo-content{
+    flex: 1 1 0%;
+}
+
+.todo-item .todo-content input{
+    color: var(--dark);
+    font-size:1.125rem;
+    /*width: 18rem*/;/*============================================================*/
+}
+.todo-item .actions{
+    display: flex;
+    align-items: center;
+}
+.todo-item .actions button{
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.todo-item .actions .edit{
+    margin-right: 0.5rem;
+    background-color: var(--primary);
+}
+
