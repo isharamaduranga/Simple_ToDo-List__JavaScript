@@ -102,7 +102,14 @@ function DisplayTodos() {
                input.setAttribute('readonly',true);
                todo.content=ev1.target.value;
                DisplayTodos();
-           })
+           });
+        });
+
+        deleteBtn.addEventListener('click' , ev => {
+            todos = todos.filter(t => t != todo);
+            localStorage.setItem('todos',JSON.stringify(todos));
+            DisplayTodos();
         })
+
     });
 }
