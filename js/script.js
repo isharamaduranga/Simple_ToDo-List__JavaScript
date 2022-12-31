@@ -78,6 +78,20 @@ function DisplayTodos() {
         todoItem.appendChild(actions);
         todoList.appendChild(todoItem);
 
-    });
+        if (todo.done){
+            todoItem.classList.add('done')
+        }
 
+        input.addEventListener('click',ev => {
+            todo.done  = ev.target.checked;
+            localStorage.setItem('todos',JSON.stringify(todos));
+
+            if (todo.done) {
+                todoItem.classList.add('done');
+            }else {
+                todoItem.classList.remove('done');
+            }
+            DisplayTodos();
+        });
+    });
 }
