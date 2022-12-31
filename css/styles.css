@@ -150,3 +150,20 @@ input:checked ~ .bubble::after{
     transition: 0.2s ease-in-out;
 }
 
+.create-todo input[type=submit]:hover{
+    opacity: 0.75;
+}
+
+.todo-list .list{
+    margin: 1rem 0;
+}
+.todo-list .todo-item{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+}
+
