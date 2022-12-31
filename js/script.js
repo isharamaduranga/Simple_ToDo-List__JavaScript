@@ -38,6 +38,35 @@ function DisplayTodos() {
     todoList.innerHTML='';
 
     todos.forEach(todo => {
+        const todoItem = document.createElement('div');
+        todoItem.classList.add('todo-item')
+
+        const label = document.createElement('label');
+        const input = document.createElement('input');
+        const span  = document.createElement('span');
+        const content  = document.createElement('div');
+        const actions  = document.createElement('div');
+        const edit  = document.createElement('button');
+        const deleteBtn  = document.createElement('button');
+
+        input.type  = 'checkbox';
+        input.checked=todo.done;
+        span.classList.add('bubble');
+
+
+        if(todo.category == 'personal'){
+            span.classList.add('personal')
+        }else {
+            span.classList.add('studies')
+        }
+
+        content.classList.add('todo-content');
+        actions.classList.add('actions');
+        edit.classList.add('edit');
+        deleteBtn.classList.add('delete');
+
+        content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
+        deleteBtn.innerHTML='Delete';
 
     });
 
