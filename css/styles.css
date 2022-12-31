@@ -194,8 +194,20 @@ input:checked ~ .bubble::after{
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+.todo-item .actions button:hover{
+ opacity: 0.75;
+}
+
 .todo-item .actions .edit{
     margin-right: 0.5rem;
-    background-color: var(--primary);
+    background-color: var(--studies);
+}
+.todo-item .actions .delete{
+    background-color: var(--danger);
+}
+
+.todo-item.done .todo-content input{
+    text-decoration: line-through;
+    color: var(--gray);
 }
 
