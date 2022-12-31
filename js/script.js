@@ -25,5 +25,20 @@ window.addEventListener('load', () => {
 
         evt.target.reset();
 
-    })
+        DisplayTodos();
+
+    });
+    DisplayTodos();
 });
+
+function DisplayTodos() {
+
+    const todoList = document.querySelector('#todo-list');
+
+    todoList.innerHTML='';
+
+    todos.forEach(todo => {
+
+    });
+
+}
