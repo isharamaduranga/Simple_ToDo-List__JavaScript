@@ -3,7 +3,7 @@
 <head>
     <!-- Define all  meta  Details-->
     <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible"content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="Author" content="Ishara Maduranga">
     <meta name="Owner" content="Ishara Maduranga">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,8 @@
     <!-- import to link google font with project-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+          rel="stylesheet">
 
     <!--linked css styles file location-->
     <link rel="stylesheet" href="css/styles.css">
@@ -22,15 +23,15 @@
 <main class="app_todo">
     <section class="greeting">
         <h2 class="title">
-            what's  up , <input type="text" id="name" placeholder="Name here">
+            what's up , <input type="text" id="name" placeholder="Name here">
         </h2>
     </section>
 
     <section class="create-todo">
         <h3> CREATE A TODO LIST</h3>
-        <form  id="new-todo-form">
+        <form id="new-todo-form">
             <h4>What do you want To-do List ?</h4>
-            <input  type="text"  name="content" id="content" placeholder="E.g. take a breakfast ...">
+            <input type="text" name="content" id="content" placeholder="E.g. take a breakfast ...">
 
             <h4> Pick a Category</h4>
 
@@ -40,8 +41,8 @@
                             type="radio"
                             name="category"
                             id="category1"
-                            value="studies" />
-                    <span  class="bubble studies"></span>
+                            value="studies"/>
+                    <span class="bubble studies"></span>
                     <div>My Studies</div>
                 </label>
 
@@ -50,16 +51,55 @@
                             type="radio"
                             name="category"
                             id="category2"
-                            value="personal" />
-                    <span  class="bubble personal"></span>
+                            value="personal"/>
+                    <span class="bubble personal"></span>
                     <div>Personal</div>
                 </label>
             </div>
 
-
-
-
+            <input type="submit" value="Add todo"/>
         </form>
+    </section>
+
+
+    <section class="todo-list">
+        <h3> TODO - LIST</h3>
+        <div class="list" id="todo-list">
+
+            <!--TO DO Item of studies-->
+            <div class="todo-item">
+                <label>
+                    <input type="checkbox"/>
+                    <span class="bubble studies"></span>
+                </label>
+
+                <div class="todo-content">
+                    <input type="text" value="Participate today lecture 🏫" readonly/>
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+
+                <!--TO DO Item of personal-->
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox"/>
+                        <span class="bubble personal"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Take a Breakfast 🥪🥤" readonly/>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+
+                </div>
+
+            </div>
+
     </section>
 
 </main>
