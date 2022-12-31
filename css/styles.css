@@ -17,3 +17,14 @@
     box-sizing: border-box;
     font-family:'montserrat',sans-serif;
 }
+input:not([type="radio"]):not([type="checkbox"]),button{
+   appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+body{
+    background: var(--light);
+}
