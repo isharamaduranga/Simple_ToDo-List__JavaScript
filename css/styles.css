@@ -36,15 +36,16 @@ section{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+
 h3{
     color: var(--dark);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
 }
 h4{
     color: var(--gray);
-    font-size: 0.875rem;
+    font-size: 0.975rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -58,8 +59,8 @@ h4{
 }
 .greeting .title,
 .greeting .title input{
-    color: var(--dark) ;
-    font-size: 1.5rem;
+    color: deeppink;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -180,7 +181,7 @@ input:checked ~ .bubble::after{
 .todo-item .todo-content input{
     color: var(--dark);
     font-size:1.125rem;
-    /*width: 18rem*/;/*============================================================*/
+    width: 18rem;
 }
 .todo-item .actions{
     display: flex;
