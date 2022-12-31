@@ -66,7 +66,17 @@ function DisplayTodos() {
         deleteBtn.classList.add('delete');
 
         content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
-        deleteBtn.innerHTML='Delete';
+        edit.innerHTML = 'Edit';
+        deleteBtn.innerHTML = 'Delete';
+
+        label.appendChild(input);
+        label.appendChild(span);
+        actions.appendChild(edit);
+        actions.appendChild(deleteBtn);
+        todoItem.appendChild(label);
+        todoItem.appendChild(content);
+        todoItem.appendChild(actions);
+        todoList.appendChild(todoItem);
 
     });
 
