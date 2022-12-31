@@ -51,3 +51,26 @@ h4{
 .greeting .title{
     display: flex;
 }
+.greeting .title input{
+    margin-left: 0.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+.greeting .title,
+.greeting .title input{
+    color: var(--dark) ;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.create-todo input[type="text"]{
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem  1.5rem;
+    color: var(--dark);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+}
