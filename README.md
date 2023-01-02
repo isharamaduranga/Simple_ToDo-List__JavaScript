@@ -7,8 +7,8 @@
 </h5>
 <div align="center">
 
-![repo size](https://img.shields.io/github/repo-size/isharamaduranga/isharamaduranga?label=Repo%20Size&style=for-the-badge&labelColor=black&color=20bf6b)
-![GitHub forks](https://img.shields.io/github/forks/isharamaduranga/isharamaduranga?&labelColor=black&color=0fb9b1&style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/isharamaduranga/isharamaduranga?&labelColor=black&color=f7b731&style=for-the-badge)
-![GitHub LastCommit](https://img.shields.io/github/last-commit/isharamaduranga/isharamaduranga?logo=github&labelColor=black&color=d1d8e0&style=for-the-badge)
+![repo size](https://img.shields.io/github/repo-size/isharamaduranga/Simple_ToDo-List__JavaScript?label=Repo%20Size&style=for-the-badge&labelColor=black&color=20bf6b)
+![GitHub forks](https://img.shields.io/github/forks/isharamaduranga/Simple_ToDo-List__JavaScript?&labelColor=black&color=0fb9b1&style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/isharamaduranga/Simple_ToDo-List__JavaScript?&labelColor=black&color=f7b731&style=for-the-badge)
+![GitHub LastCommit](https://img.shields.io/github/last-commit/isharamaduranga/Simple_ToDo-List__JavaScript?logo=github&labelColor=black&color=d1d8e0&style=for-the-badge)
 </div>
